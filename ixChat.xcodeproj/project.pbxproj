@@ -12,9 +12,12 @@
 		6391F13F1F1E3D0600512AF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6391F13D1F1E3D0600512AF6 /* Main.storyboard */; };
 		6391F1411F1E3D0600512AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391F1401F1E3D0600512AF6 /* Assets.xcassets */; };
 		6391F1441F1E3D0600512AF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6391F1421F1E3D0600512AF6 /* LaunchScreen.storyboard */; };
+		6391F14C1F1E3EBB00512AF6 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 6391F14B1F1E3EBB00512AF6 /* GoogleService-Info (1).plist */; };
+		6BA4B50F4CF21F2F231F4732 /* Pods_ixChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8458940FA7042D21120D148A /* Pods_ixChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BE74C00B21F0060808E27D6 /* Pods-ixChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ixChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ixChat/Pods-ixChat.release.xcconfig"; sourceTree = "<group>"; };
 		6391F1361F1E3D0600512AF6 /* ixChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ixChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6391F1391F1E3D0600512AF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6391F13B1F1E3D0600512AF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		6391F1401F1E3D0600512AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6391F1431F1E3D0600512AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6391F1451F1E3D0600512AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6391F14B1F1E3EBB00512AF6 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		8458940FA7042D21120D148A /* Pods_ixChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ixChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E615DA186118E6B2A933CA /* Pods-ixChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ixChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ixChat/Pods-ixChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA4B50F4CF21F2F231F4732 /* Pods_ixChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		169FCEAC51AC35C4F9EC172E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8458940FA7042D21120D148A /* Pods_ixChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D5EC4533CABE1555350B4D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8E615DA186118E6B2A933CA /* Pods-ixChat.debug.xcconfig */,
+				5BE74C00B21F0060808E27D6 /* Pods-ixChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6391F12D1F1E3D0600512AF6 = {
 			isa = PBXGroup;
 			children = (
 				6391F1381F1E3D0600512AF6 /* ixChat */,
 				6391F1371F1E3D0600512AF6 /* Products */,
+				1D5EC4533CABE1555350B4D1 /* Pods */,
+				169FCEAC51AC35C4F9EC172E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				6391F1401F1E3D0600512AF6 /* Assets.xcassets */,
 				6391F1421F1E3D0600512AF6 /* LaunchScreen.storyboard */,
 				6391F1451F1E3D0600512AF6 /* Info.plist */,
+				6391F14B1F1E3EBB00512AF6 /* GoogleService-Info (1).plist */,
 			);
 			path = ixChat;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6391F1481F1E3D0600512AF6 /* Build configuration list for PBXNativeTarget "ixChat" */;
 			buildPhases = (
+				682A5DA0330B56F43D985EBE /* [CP] Check Pods Manifest.lock */,
 				6391F1321F1E3D0600512AF6 /* Sources */,
 				6391F1331F1E3D0600512AF6 /* Frameworks */,
 				6391F1341F1E3D0600512AF6 /* Resources */,
+				78CD5DABA9A20DEA4B8A752A /* [CP] Embed Pods Frameworks */,
+				529F6972F4242E04B179D4D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,10 +156,71 @@
 				6391F1441F1E3D0600512AF6 /* LaunchScreen.storyboard in Resources */,
 				6391F1411F1E3D0600512AF6 /* Assets.xcassets in Resources */,
 				6391F13F1F1E3D0600512AF6 /* Main.storyboard in Resources */,
+				6391F14C1F1E3EBB00512AF6 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		529F6972F4242E04B179D4D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ixChat/Pods-ixChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		682A5DA0330B56F43D985EBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ixChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78CD5DABA9A20DEA4B8A752A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ixChat/Pods-ixChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ixChat/Pods-ixChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6391F1321F1E3D0600512AF6 /* Sources */ = {
@@ -260,6 +351,7 @@
 		};
 		6391F1491F1E3D0600512AF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E615DA186118E6B2A933CA /* Pods-ixChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ixChat/Info.plist;
@@ -272,6 +364,7 @@
 		};
 		6391F14A1F1E3D0600512AF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE74C00B21F0060808E27D6 /* Pods-ixChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ixChat/Info.plist;
@@ -301,6 +394,7 @@
 				6391F14A1F1E3D0600512AF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
