@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
@@ -22,6 +23,21 @@ class LoginViewController: UIViewController {
 
     @IBAction func Login(_ sender: Any) {
         
+        Firebase
+        .Auth
+        .auth()
+            .signInAnonymously(completion: { (user,error) in
+                if let err = error {
+                    print(err.localizedDescription)
+                    return
+                }
+                
+                self.performSegue(withIdentifier: "navToChannels", sender: nil)
+                
+                /*
+                let channelsNavigationController = self.storyboard?.instantiateViewController(
+                */
+                })
     }
 
 }
