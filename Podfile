@@ -9,6 +9,7 @@ target 'ixChat' do
 
   pod 'JSQMessagesViewController'
   pod 'Firebase/Core'
-
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end
